@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0C4DE"
+    tools:context="com.fernando.prediccionhoras.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageTiempo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textTemperatura2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperatura"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageTiempo2"
+        app:layout_constraintStart_toStartOf="@+id/imageTiempo2"
+        app:layout_constraintTop_toBottomOf="@+id/imageTiempo2" />
+
+    <TextView
+        android:id="@+id/textVelocidadViento2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginTop="72dp"
+        android:text="VelocidadViento"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textHumedad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="Humedad"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textVelocidadViento2"
+        app:layout_constraintTop_toBottomOf="@+id/textVelocidadViento2" />
+
+    <TextView
+        android:id="@+id/textEstadoCielo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Estado cielo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textHumedad2"
+        app:layout_constraintTop_toBottomOf="@+id/textHumedad2" />
+
+</android.support.constraint.ConstraintLayout>
